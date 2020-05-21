@@ -1,65 +1,66 @@
-.togleModal{
-    display: none;
+.togleModal {
+  display: none;
 }
 
-.create-order{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 50;
-    padding-top: 70px;
-    // border: 1px solid $style-color;
-    background: #F0F0F0;
-    overflow-x: auto;
+.create-order {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  padding-top: 70px;
+  // border: 1px solid $style-color;
+  background: #F0F0F0;
+  overflow-x: auto;
 }
 
-.create-order__close-btn{
-    width: 20px;
-    height: 20px;
+.create-order__close-btn {
+  width: 20px;
+  height: 20px;
 }
 
-.create-order__title{
+.create-order__title {
 
-font-weight: 800;
-font-size: 25px;
-line-height: 30px;
-text-transform: uppercase;
-color: $caption-color;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $caption-color;
 }
 
-.create-order__close-btn{
-    position: relative;
-    top: -80px;
-    right: -150px;
+.create-order__close-btn {
+  position: relative;
+  top: -80px;
+  right: -150px;
 }
 
-.create-order__description{
-text-align: left;
-padding-left: 73px;
-margin-bottom: 10px;
+.create-order__description {
+  text-align: left;
+  padding-left: 16%;
+  margin-bottom: 10px;
 }
 
-.create-order__input{
-    width: 70%;
-    height: 42px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    border: none;
+.create-order__input {
+  width: 70%;
+  height: 42px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border: none;
 }
 
-.textArea{
-    width: 70%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: none;
-    height: 150px;
+.textArea {
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+  height: 150px;
 }
-.create-order__button{
-    background: $style-color;
-    border-radius: 100px;
-    padding: 14px 71px;
-    margin-bottom: 40px;
+
+.create-order__button {
+  background: $style-color;
+  border-radius: 100px;
+  padding: 14px 71px;
+  margin-bottom: 40px;
 }
