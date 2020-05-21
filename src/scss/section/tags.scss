@@ -1,0 +1,81 @@
+.tag__birthday {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.tag__event {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+.tag__corporate {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tag__img {
+  margin: 0 auto;
+}
+
+.tag__weding {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.tag__funs {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tag__auto {
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tag__description{
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.tag__list{
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.tag__list:last-child{
+    margin-bottom: 0;
+}
+
+
+.beforeElement{
+    padding-top: 10px;
+}
+
+.beforeElement::before{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+}

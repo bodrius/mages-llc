@@ -1,0 +1,39 @@
+
+
+.container__caption{
+    padding-top: 520px;
+    font-size: 25px;
+    font-weight: 800;
+    color: $caption-color ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container__list{
+    padding-left: 5px;
+}
+
+.container__item{
+    padding: 0 5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.container__item:last-child{
+margin-bottom: 0;
+}
+
+
+.pseudoelement{
+    padding-bottom: 20px;
+}
+
+.pseudoelement::after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    top: 5px;
+}

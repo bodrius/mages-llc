@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Paint</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="section__box">
+        <h2 class="section__caption">Water paint</h2>
+      </div>
+      <img
+        class="section__title"
+        src="./images/main-title.png"
+        alt="caption "
+      /><img />
+      <p class="section__desk">С машини смоется, из памяти- никогда!</p>
+      <a
+        href="https://www.instagram.com/waterpaint_club/"
+        class="section__link instagram"
+        target="_blank"
+      >
+        <img src="./images/инстаграм.png" alt="logo instagram" />
+      </a>
+      <a
+        href="https://t.me/jurlia"
+        class="section__link teleframm"
+        target="_blank"
+      >
+        <img src="./images/телеграм.png" alt="logo social"
+      /></a>
+
+      <a
+        href="https://www.facebook.com/waterpaintclub/?ref=bookmarks"
+        class="section__link facebook"
+        target="_blank"
+      >
+        <img src="./images/фейсбук.png" alt="logo social" />
+      </a>
+      <button class="section__button js_button">Купить</button>
+      <ul id="slides">
+        <li class="slide showing">
+          <img
+            src="./images/банер моб.png"
+            alt="photo"
+            width="320"
+            height="499"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="./images/банер moб.png"
+            alt="photo"
+            width="320"
+            height="499"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="./images//банер моб 3.png"
+            alt="photo"
+            width="320"
+            height="499"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="./images/банер моб 2.png"
+            alt="photo"
+            width="320"
+            height="499"
+          />
+        </li>
+      </ul>
+      <!-- toogle.menu -->
+
+      <button id="modal" class="container__button">
+        <svg
+          class="container__icon"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewbox="0 0 384 384"
+          style="enable-background: new 0 0 384 384;"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <g>
+                <rect x="0" y="277.333" width="384" height="42.667" />
+                <rect x="0" y="170.667" width="384" height="42.667" />
+                <rect x="0" y="64" width="384" height="42.667" />
+              </g>
+            </g>
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+        </svg>
+      </button>
+
+      <div class="modal-box">
+        <div class="modal-box__window">
+          <button class="close__modal">
+            <svg
+              class="icon"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewbox="0 0 512.001 512.001"
+              style="enable-background: new 0 0 512.001 512.001;"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+               L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+               c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+               l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+               L284.286,256.002z"
+                  />
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </button>
+          <ul>
+            <li class="nav-list-item">
+              <a href="#info" onclick="('#info')" class="nav-link">О Краске</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#price" onclick="('#price')" class="nav-link">Цены</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#question" onclick="('#question')" class="nav-link"
+                >Вопросы</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#feedback" onclick="('#feedback')" class="nav-link"
+                >Отзывы</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#galery" onclick="('#galery')" class="nav-link">
+                Фотогалерея</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact" onclick="('#contact')" class="nav-link">
+                Контакты</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- info section -->
+    <section class="container" id="info">
+      <h3 class="container__caption">О краске</h3>
+      <ul class="container__list">
+        <li class="container__item">
+          Краска вызывает WOW эффект, это не имеющая аналогов в Украине меловая
+          аэрозольная краска смываемая водой.
+        </li>
+        <li class="container__item">
+          Используется для: поздравлений с днём рождений, встречи из роддома,
+          свадеб, оформление витрин, вежливый стопхам.
+        </li>
+        <li class="container__item pseudoelement">
+          Оригинальный способ украшения любого вашего мероприятия.
+        </li>
+      </ul>
+    </section>
+
+    <!-- tags section  -->
+    <section class="container tag">
+      <span class="tag__birthday">День Рождения</span>
+      <span class="tag__event">Ивенты</span>
+      <span class="tag__corporate">Корпоративы</span>
+      <img class="tag__img" src="./images/MaskGroup.png" alt="wow" />
+      <span class="tag__weding">Свадьбы</span>
+      <span class="tag__funs">Розыграши</span>
+      <span class="tag__auto">Автопробеги</span>
+      <ul class="tag__description">
+        <li class="tag__list beforeElement">
+          В наличии 9 насыщенных ЦВЕТОВ: красный, оранжевый, желтый, зелёный,
+          синий, белый, фиолетовый, розовый, чёрный.
+        </li>
+        <li class="tag__list">
+          Предназначена для нанесения на различные поверхности: метал, стекло,
+          пластик, дерево, асфальт, бетон, снег.
+        </li>
+        <li class="tag__list">Производство: Германия.</li>
+      </ul>
+    </section>
+
+    <!-- buy ballons collors -->
+
+    <section class="shop" id="price">
+      <div class="container">
+        <h3 class="shop__caption">Купить балончики краски</h3>
+        <img class="shop__sprey" src="./images/MasлХ.png" alt="sprey logo" />
+        <img class="shop__ballon" src="./images/балончик.png" alt="ballon" />
+        <p class="shop__desc">
+          Наша краска предназначена для нанесения на различные поверхности. В
+          наличии 9 цветов.
+        </p>
+        <ul class="shop__list">
+          <li class="shop__item">чёрный</li>
+          <li class="shop__item">белый</li>
+          <li class="shop__item">красный</li>
+          <li class="shop__item">розовый</li>
+          <li class="shop__item">желтый</li>
+          <li class="shop__item">оранжевый</li>
+          <li class="shop__item">синий</li>
+          <li class="shop__item">зелёный</li>
+          <li class="shop__item">фиолетовый</li>
+        </ul>
+
+        <ul class="shop__item-price">
+          <li class="shop__list-price">1 шт.</li>
+          <li class="shop__list-price">400</li>
+          <li class="shop__list-price">грн</li>
+          <li class="shop__list-price">2 шт.</li>
+          <li class="shop__list-price">800</li>
+          <li class="shop__list-price">грн</li>
+          <li class="shop__list-price">3 шт.</li>
+          <li class="shop__list-price">1200</li>
+          <li class="shop__list-price">грн</li>
+        </ul>
+        <button class="shop__button-buy js_button ">Купить</button>
+      </div>
+    </section>
+
+    <!-- section question -->
+
+    <section class="container question" id="question">
+      <h2 class="question__title">Часто задаваемые вопросы</h2>
+      <ul class="question__list">
+        <li class="question__item">
+          <img
+            src="./images/Number1.png"
+            alt="number"
+            class="question__number"
+          />
+          <p class="question__caption numberOne">
+            Какова площадь покрытия поверхности одним баллончиком Вашей краски
+            на практике?
+          </p>
+          <p class="question__description">
+            В баллоне содержится 150 мл. аэрозоля под газом. Если распылять
+            состав равномерно по окрашиваемой поверхности, гарантируем 1,5 кв.м.
+            покрашенной поверхности.
+          </p>
+        </li>
+        <li class="question__item">
+          <img
+            src="./images/Number2.png"
+            alt="number"
+            class="question__number"
+          />
+          <p class="question__caption">
+            Краска может повредить кузову автомобиля или лакокрасочному покрытию
+            ?
+          </p>
+          <p class="question__description">
+            Наша краска разработана именно для покрытия поверхности автомобиля.
+            Мы гарантируем 100% удаление нашей краски после мойки. Мы уверены в
+            экологичности состава нашей краски. Она произведена в Германии.
+          </p>
+        </li>
+        <li class="question__item">
+          <img
+            src="./images/Number3.png"
+            alt="number"
+            class="question__number"
+          />
+          <p class="question__caption">
+            Как долго можно ее не смывать с авто? А если краска попадет на
+            одежду, что делать?
+          </p>
+          <p class="question__description">
+            Мы гарантируем, что у нашей краски отсутствует лимит нахождения на
+            поверхности. Иными словами, пока дождь не зальёт Вашу машину. Хоть и
+            в лютый мороз. Ваша испачканная одежда после обычной для неё
+            прачечной процедуры будет выглядить так же.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- feedback section -->
+    <section class="feedback" id="feedback">
+      <div class="container">
+        <h2 class="feedback__title">Отзывы</h2>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <img
+              src="./images/feedback1.png"
+              alt="photo"
+              class="feedback__img"
+            />
+            <p class="feedback__caption">
+              " Встречал свою жену из роддома и купил краску у ребят. Я с
+              другого города и доставили максимально быстро, впечатлило что
+              цвета которые я выбрал, очень яркие и насыщенные. "
+            </p>
+            <p class="feedback__description afterLine">Андрей, Харьков</p>
+          </li>
+          <li class="feedback__item">
+            <img
+              src="./images/feedback2.png"
+              alt="photo"
+              class="feedback__img"
+            />
+            <p class="feedback__caption">
+              " Решила поздравить своего мужа на День Рождение, и рано утром
+              разрисовала ему автомобиль. Когда он увидел это произведение
+              искусства, я думала он меня прибьет :) Ребята вы молодцы, очень
+              классный продукт. "
+            </p>
+            <p class="feedback__description afterLine">Юля, Киев</p>
+          </li>
+          <li class="feedback__item">
+            <img
+              src="./images/feedback3.png"
+              alt="photo"
+              class="feedback__img"
+            />
+            <p class="feedback__caption">
+              " А мы с мужем на свадьбу разукрасили наш лимузин, это было очень
+              забавно! Получились крутые фотографии на всю жизнь. Невероятные
+              эмоции когда красишь чужой лимузин за $$$$$$$. "
+            </p>
+            <p class="feedback__description">Аня, Ирпень</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- slider section -->
+    <section class="galery" id="galery">
+      <div class="container">
+        <h3 class="galery__caption">
+          Фотогалерея
+        </h3>
+        <div class="b-carousel js-carousel">
+          <button class="b-carousel__prev js-carousel__prev">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="svg-inline--fa fa-chevron-left fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 420 512"
+            >
+              <path
+                fill="white"
+                d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              ></path>
+            </svg>
+          </button>
+          <button class="b-carousel__next js-carousel__next">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="svg-inline--fa fa-chevron-right fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 420 512"
+            >
+              <path
+                fill="white"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              ></path>
+            </svg>
+          </button>
+          <div class="b-carousel__wrap js-carousel__wrap">
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide1.png"
+                alt="slide number 1"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide2.png"
+                alt="slide number 2"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide3.png"
+                alt="slide number 3"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide4.png"
+                alt="slide number 4"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide5.png"
+                alt="slide number 5"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide6.png"
+                alt="slide number 6"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+            <div class="b-carousel__item">
+              <img
+                src="./images/slide7.png"
+                alt="slide number 7"
+                class="b-carousel__img"
+                width="580"
+                height="590"
+              />
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="galery__socials"
+          href="https://www.instagram.com/waterpaint_club/"
+          target="_blank"
+          >Смотреть больше в Instagram
+        </a>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <p class="footer__title">Water Paint</p>
+      <p class="footer__question">Остались вопросы?</p>
+      <a class="footer__phone" href="tel:+380506570167">+380506570167</a>
+      <button type="button" class="footer__btn-call js_button">
+        Перезвоните мне
+      </button>
+      <div class="footer_box-socials">
+        <a
+          href="https://www.instagram.com/waterpaint_club/"
+          class="footer__link"
+          target="_blank"
+        >
+          <img src="./images/инстаграм.png" alt="logo instagram" />
+        </a>
+        <a href="https://t.me/jurlia" class="footer__link" target="_blank">
+          <img src="./images/телеграм.png" alt="logo social"
+        /></a>
+        <a
+          href="https://www.facebook.com/waterpaintclub/?ref=bookmarks"
+          class="footer__link"
+          target="_blank"
+        >
+          <img src="./images/фейсбук.png" alt="logo social" />
+        </a>
+      </div>
+    </footer>
+
+    <form class="create-order togleModal" id="js_form" action="#" method="POST">
+      <p class="create-order__title">Оформить заказ</p>
+      <button type="button" class="create-order__close-btn">
+        <svg
+          class="icon"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewbox="0 0 512.001 512.001"
+          style="enable-background: new 0 0 512.001 512.001;"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <path
+                d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+               L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+               c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+               l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+               L284.286,256.002z"
+              />
+            </g>
+          </g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+          <g></g>
+        </svg>
+      </button>
+
+      <p class="create-order__description">
+        Имя и Фамилия получателя:
+      </p>
+      <input
+        class="create-order__input"
+        type="text"
+        name="name"
+        autofocus
+        placeholder="Юлия Василькова"
+        required
+        autocomplete="true"
+      />
+      <p class="create-order__description">
+        Телефон:
+      </p>
+      <input
+        class="create-order__input"
+        type="tel"
+        name="tel"
+        pattern="(^[\+]{0,1}380([0-9]{9})$)"
+        placeholder="+380 XX XXX XX XX"
+        required
+        autocomplete="true"
+      />
+      <p class="create-order__description">
+        Информация о доставки:
+      </p>
+      <textarea class=" textArea" name="message" placeholder="Message" required wrap > Город доставки:
+ Склад новой почты:
+ Количество баллончиков:
+ Цвета баллончиков:
+      </textarea>
+    </br>
+      <button class="create-order__button js__btnSend"  type="submit">Отправить</button>
+    </form>
+    <div class="success-modal">
+      <div class="success-modal__backdrop">
+        <div class="success-modal__window">
+          <span class="success-modal__title">Спасибо за ваш заказ!</span>
+          <p class="success-modal__deck">Ожидайте звонка от нашего менеджера.</p>
+          <button type="button" class="success-modal__close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

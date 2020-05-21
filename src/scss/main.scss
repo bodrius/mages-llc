@@ -1,0 +1,16 @@
+@import 'normalize.scss';
+@import "fonts.scss";
+@import "variables.scss";
+@import 'base.scss';
+
+@import "./section/header.scss";
+@import "./section/info.scss";
+@import "./section/tags.scss";
+@import "./section/shop.scss";
+@import "./section/question.scss";
+@import "./section/feedback.scss";
+@import "./section/galery.scss";
+@import "./section/footer.scss";
+@import "./section/order.scss";
+@import "./section/succes.scss";
+

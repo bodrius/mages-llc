@@ -1,0 +1,92 @@
+.shop {
+  background: rgba(177, 177, 177, 0.13);
+  position: relative;
+  padding-bottom: 30px;
+}
+
+
+.shop__caption {
+    padding-top: 20px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $caption-color;
+  margin-bottom: 30px;
+}
+
+.shop__sprey{
+    margin: 0 auto;
+}
+.shop__ballon{
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+}
+
+.shop__desc{
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+.shop__list{
+    font-size: 18px;
+    margin: 0 10px;
+    border: 1px solid $style-color;
+    display: flex;
+    flex-flow: column wrap;
+    height: 170px;
+    margin-bottom: 20px;
+}
+.shop__item{
+    padding: 5px 0;
+}
+
+.shop__item-price{
+    display: flex;
+    flex-flow: column wrap;
+    height: 90px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.shop__list-price{
+    margin-bottom: 5px;
+}
+
+.shop__list-price:nth-child(2) {
+    font-weight: 600;
+}
+
+.shop__list-price:nth-child(3) {
+    margin-bottom: 0;   
+    font-weight: 600;
+}
+
+.shop__list-price:nth-child(5) {
+    font-weight: 600;
+}
+.shop__list-price:nth-child(6) {
+    font-weight: 600;
+    margin-bottom: 0;   
+}
+
+
+.shop__list-price:nth-child(8) {
+    font-weight: 600;
+}
+.shop__list-price:nth-child(9) {
+    font-weight: 600;
+    margin-bottom: 0;   
+}
+
+.shop__button-buy{
+    padding: 7px 45px;
+  border: 1px solid $style-color;
+  color: $style-color;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 40px;
+  outline: none;
+}
