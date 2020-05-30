@@ -10,7 +10,6 @@
   height: 100%;
   z-index: 50;
   padding-top: 70px;
-  // border: 1px solid $style-color;
   background: #F0F0F0;
   overflow-x: auto;
 }
@@ -63,4 +62,21 @@
   border-radius: 100px;
   padding: 14px 71px;
   margin-bottom: 40px;
+}
+
+@media(min-width: 768px){
+  .create-order__close-btn {
+    right: -260px;
+  }
+}
+
+@media(min-width: 1200px){
+  .create-order {
+    width: 40%;
+    margin: 0 auto;
+    left: 30%;
+    height: 70%;
+    border-radius: 10px;
+    background: rgb(224, 222, 222);
+  }
 }

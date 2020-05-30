@@ -14,21 +14,29 @@
         class="section__title"
         src="./images/main-title.png"
         alt="caption "
-      /><img />
+      />
       <p class="section__desk">С машини смоется, из памяти- никогда!</p>
+      <a class="section__phone-number" href="tel:+380506570167">+380506570167</a>
+      <span class="section__graph">Пн.-Вс. 9-18 </span>
+      <h3 class="section__title-tablet">С машины смоется, из памяти - никогда! Меловая аэрозольная краска смываемая водой, не имеющая аналогов в Украине.</h3>
+      <img
+        class="section__image-tablet"
+        src="./images/tablet/title-tablet.png"
+        alt="caption-image"
+      />
       <a
         href="https://www.instagram.com/waterpaint_club/"
         class="section__link instagram"
         target="_blank"
       >
-        <img src="./images/инстаграм.png" alt="logo instagram" />
+        <img class="social_link" src="./images/инстаграм.png" alt="logo instagram" />
       </a>
       <a
         href="https://t.me/jurlia"
         class="section__link teleframm"
         target="_blank"
       >
-        <img src="./images/телеграм.png" alt="logo social"
+        <img class="social_link" src="./images/телеграм.png" alt="logo social"
       /></a>
 
       <a
@@ -36,9 +44,11 @@
         class="section__link facebook"
         target="_blank"
       >
-        <img src="./images/фейсбук.png" alt="logo social" />
+        <img  class="social_link" src="./images/фейсбук.png" alt="logo social" />
       </a>
       <button class="section__button js_button">Купить</button>
+
+      <!-- mobile slider -->
       <ul id="slides">
         <li class="slide showing">
           <img
@@ -73,8 +83,80 @@
           />
         </li>
       </ul>
-      <!-- toogle.menu -->
 
+<!-- tablet slider -->
+<ul class="slider">
+  <li class="slide showing">
+    <img
+      src="./images/tablet/slide1.png"
+      alt="photo"
+      width="768"
+      height="843"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/tablet/slide2.png"
+      alt="photo"
+      width="768"
+      height="843"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/tablet/slide3.png"
+      alt="photo"
+      width="768"
+      height="843"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/tablet/slide4.png"
+      alt="photo"
+      width="768"
+      height="843"
+    />
+  </li>
+</ul>
+
+<!-- desktop slider -->
+<ul class="sliders">
+  <li class="slide showing">
+    <img
+      src="./images/desktop/slide1.png"
+      alt="photo"
+      width="1440"
+      height="800"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/desktop/slide2.png"
+      alt="photo"
+      width="1440"
+      height="800"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/desktop/slide3.png"
+      alt="photo"
+      width="1440"
+      height="800"
+    />
+  </li>
+  <li class="slide">
+    <img
+      src="./images/desktop/slide4.png"
+      alt="photo"
+      width="1440"
+      height="800"
+    />
+  </li>
+</ul>
+
+      <!-- toogle.menu -->
       <button id="modal" class="container__button">
         <svg
           class="container__icon"
@@ -189,11 +271,42 @@
       </div>
     </header>
 
+    <!-- navigation desktop  -->
+<div class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#info" onclick="('#info')" class="nav__item-link">О Краске</a>
+      </li>
+      <li class="nav__item">
+        <a href="#price" onclick="('#price')" class="nav__item-link">Цены</a>
+      </li>
+      <li class="nav__item">
+        <a href="#question" onclick="('#question')" class="nav__item-link"
+          >Вопросы</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="#feedback" onclick="('#feedback')" class="nav__item-link"
+          >Отзывы</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="#galery" onclick="('#galery')" class="nav__item-link">
+          Фотогалерея</a
+        >
+      </li>
+      <li class="nav__item">
+        <a href="#contact" onclick="('#contact')" class="nav__item-link">
+          Контакты</a
+        >
+      </li>
+    </ul>
+  </div>
     <!-- info section -->
     <section class="container" id="info">
       <h3 class="container__caption">О краске</h3>
       <ul class="container__list">
-        <li class="container__item">
+        <li class="container__item beforeline">
           Краска вызывает WOW эффект, это не имеющая аналогов в Украине меловая
           аэрозольная краска смываемая водой.
         </li>
@@ -209,6 +322,7 @@
 
     <!-- tags section  -->
     <section class="container tag">
+      <div class="tag__tablet-width">
       <span class="tag__birthday">День Рождения</span>
       <span class="tag__event">Ивенты</span>
       <span class="tag__corporate">Корпоративы</span>
@@ -216,6 +330,7 @@
       <span class="tag__weding">Свадьбы</span>
       <span class="tag__funs">Розыграши</span>
       <span class="tag__auto">Автопробеги</span>
+    </div>
       <ul class="tag__description">
         <li class="tag__list beforeElement">
           В наличии 9 насыщенных ЦВЕТОВ: красный, оранжевый, желтый, зелёный,
@@ -225,7 +340,7 @@
           Предназначена для нанесения на различные поверхности: метал, стекло,
           пластик, дерево, асфальт, бетон, снег.
         </li>
-        <li class="tag__list">Производство: Германия.</li>
+        <li class="tag__list afterElement">Производство: Германия.</li>
       </ul>
     </section>
 
@@ -234,8 +349,11 @@
     <section class="shop" id="price">
       <div class="container">
         <h3 class="shop__caption">Купить балончики краски</h3>
+        <div class="shop__box">
         <img class="shop__sprey" src="./images/MasлХ.png" alt="sprey logo" />
         <img class="shop__ballon" src="./images/балончик.png" alt="ballon" />
+        <img src="./images/tablet/Water Paint.png" alt="name ballon" class="shop__name-ballon">
+      </div>
         <p class="shop__desc">
           Наша краска предназначена для нанесения на различные поверхности. В
           наличии 9 цветов.
@@ -335,12 +453,14 @@
               alt="photo"
               class="feedback__img"
             />
+            <div class="feedback__box">
             <p class="feedback__caption">
               " Встречал свою жену из роддома и купил краску у ребят. Я с
               другого города и доставили максимально быстро, впечатлило что
               цвета которые я выбрал, очень яркие и насыщенные. "
             </p>
             <p class="feedback__description afterLine">Андрей, Харьков</p>
+          </div>
           </li>
           <li class="feedback__item">
             <img
@@ -348,6 +468,7 @@
               alt="photo"
               class="feedback__img"
             />
+            <div class="feedback__boxing feedback__box">
             <p class="feedback__caption">
               " Решила поздравить своего мужа на День Рождение, и рано утром
               разрисовала ему автомобиль. Когда он увидел это произведение
@@ -355,6 +476,7 @@
               классный продукт. "
             </p>
             <p class="feedback__description afterLine">Юля, Киев</p>
+          </div>
           </li>
           <li class="feedback__item">
             <img
@@ -362,12 +484,14 @@
               alt="photo"
               class="feedback__img"
             />
+            <div class="feedback__box">
             <p class="feedback__caption">
               " А мы с мужем на свадьбу разукрасили наш лимузин, это было очень
               забавно! Получились крутые фотографии на всю жизнь. Невероятные
               эмоции когда красишь чужой лимузин за $$$$$$$. "
             </p>
             <p class="feedback__description">Аня, Ирпень</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -489,13 +613,17 @@
         </a>
       </div>
     </section>
-    <footer class="footer" id="contact">
+    <footer class="footer " id="contact">
+      <div>
       <p class="footer__title">Water Paint</p>
+    </div>
+    <div class="footer__boxing">
       <p class="footer__question">Остались вопросы?</p>
       <a class="footer__phone" href="tel:+380506570167">+380506570167</a>
       <button type="button" class="footer__btn-call js_button">
         Перезвоните мне
       </button>
+    </div>
       <div class="footer_box-socials">
         <a
           href="https://www.instagram.com/waterpaint_club/"
@@ -516,7 +644,7 @@
         </a>
       </div>
     </footer>
-
+    
     <form class="create-order togleModal" id="js_form" action="#" method="POST">
       <p class="create-order__title">Оформить заказ</p>
       <button type="button" class="create-order__close-btn">
@@ -594,7 +722,9 @@
       </textarea>
     </br>
       <button class="create-order__button js__btnSend"  type="submit">Отправить</button>
+    
     </form>
+    
     <div class="success-modal">
       <div class="success-modal__backdrop">
         <div class="success-modal__window">
@@ -604,6 +734,7 @@
         </div>
       </div>
     </div>
+  
 
   </body>
 </html>

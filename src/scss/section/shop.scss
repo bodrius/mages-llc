@@ -90,3 +90,53 @@
   border-radius: 40px;
   outline: none;
 }
+
+.shop__name-ballon{
+    display: none;
+}
+
+@media(min-width: 768px){
+    .shop__caption {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+    .shop__ballon{
+       left: 95px;
+
+    }
+
+    .shop__box{
+        float: left;
+        margin-right: 75px;
+    }
+    .shop__name-ballon{
+        display: block;
+        position: absolute;
+        top: 250px;
+        left: 110px;
+    }
+
+    .shop {
+        padding-bottom: 45px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .shop__sprey{
+        width: 460px;
+    }
+
+    .shop__ballon{
+        width: 121px;
+        left: 141px;
+    }
+
+    .shop__name-ballon{
+        top: 325px;
+        left: 162px;
+    }
+
+    .shop__box{
+        margin-right: 163px;
+    }
+}

@@ -1,39 +1,86 @@
+.container__caption {
+  padding-top: 520px;
+  font-size: 25px;
+  font-weight: 800;
+  color: $caption-color;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.container__list {
+  padding-left: 5px;
+}
+
+.container__item {
+  padding: 0 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.container__item:last-child {
+  margin-bottom: 0;
+}
 
 
-.container__caption{
-    padding-top: 520px;
-    font-size: 25px;
+.pseudoelement {
+  padding-bottom: 20px;
+}
+
+.pseudoelement::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 80%;
+  background-color: $style-color;
+  position: relative;
+  top: 5px;
+}
+
+.beforeline::before {
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .container__caption {
+    padding-top: 892px;
+    font-size: 35px;
     font-weight: 800;
-    color: $caption-color ;
+    color: $caption-color;
     text-transform: uppercase;
-    margin-bottom: 20px;
-}
+    margin-bottom: 40px;
+  }
 
-.container__list{
-    padding-left: 5px;
-}
+  .container__list {
+    padding-top: 30px;
+    width: 420px;
+  }
 
-.container__item{
-    padding: 0 5px;
-    margin-bottom: 10px;
-    text-align: left;
-}
+  .pseudoelement::after {
+    display: none;
+  }
 
-.container__item:last-child{
-margin-bottom: 0;
-}
-
-
-.pseudoelement{
-    padding-bottom: 20px;
-}
-
-.pseudoelement::after{
+  .beforeline::before {
     display: block;
     content: "";
     height: 1px;
-    width: 80%;
-    background-color: black;
+    width: 400px;
+    background-color: $style-color;
     position: relative;
-    top: 5px;
+    top: -15px;
+  }
+}
+
+
+@media(min-width: 1200px) {
+  .container__caption {
+      padding-top: 730px;
+  }
+
+  .container{
+      padding-bottom: 25px;
+  }
+
+  .container__item{
+      margin-bottom: 30px;
+  }
 }

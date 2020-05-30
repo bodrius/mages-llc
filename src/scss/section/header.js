@@ -1,11 +1,39 @@
-let slides = document.querySelectorAll('#slides .slide');
-let currentSlide = 0;
-let slideInterval = setInterval(nextSlide, 3000);
+if (window.innerWidth >= 768) {
+  let slides = document.querySelectorAll('.slider .slide');
+  let currentSlide = 0;
+  let slideInterval = setInterval(nextSlide, 3000);
 
-function nextSlide() {
-  slides[currentSlide].className = 'slide';
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].className = 'slide showing';
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+}
+
+
+if (window.innerWidth >= 1200) {
+  let slides = document.querySelectorAll('.sliders .slide');
+  let currentSlide = 0;
+  let slideInterval = setInterval(nextSlide, 3000);
+
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+}
+
+
+if (window.innerWidth < 768) {
+  let slides = document.querySelectorAll('#slides .slide');
+  let currentSlide = 0;
+  let slideInterval = setInterval(nextSlide, 3000);
+
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
 }
 
 const getId = document.querySelector('#modal');
@@ -36,4 +64,3 @@ function closeMenu(array) {
   );
 }
 closeMenu(arr);
-

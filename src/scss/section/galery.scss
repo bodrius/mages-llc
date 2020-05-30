@@ -12,11 +12,11 @@
 .galery__socials{
     font-size: 20px;
     line-height: 27px;
-    // text-decoration-line: underline;
     width: 200px;
     color: #000000;
     margin: 0 auto;
 }
+
 .galery__socials::after{
     display: block;
     content: "⟶";
@@ -25,7 +25,6 @@
     right: -69px;
     text-decoration: none;
 }
-
 
 .b-carousel {
     width: 300px;
@@ -101,4 +100,26 @@
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+
+  @media(min-width: 768px){
+    .galery__caption{
+      font-size: 35px;
+      padding-top: 50px;
+    }
+
+    .b-carousel {
+      width: 550px;
+    }
+  }
+
+  @media(min-width: 1200px){
+    .galery__socials{
+      width: 350px;
+    }
+
+    .galery__socials::after{
+      right: -165px;
+    }
   }

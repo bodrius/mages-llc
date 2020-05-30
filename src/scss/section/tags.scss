@@ -75,7 +75,64 @@
     content: "";
     height: 1px;
     width: 80%;
-    background-color: black;
+    background-color: $style-color;
     position: relative;
     bottom: 5px;
+}
+
+.afterElement::after{
+  display: none;
+}
+
+@media(min-width: 768px){
+  .tag__tablet-width{
+    float: right;
+    width: 340px;
+    position: absolute;
+    top: -247px;
+    right: 0;
+  }
+
+  .beforeElement::before{
+    display: none;
+  }
+
+  .afterElement::after{
+    display: block;
+    content: "";
+    height: 1px;
+    width: 400px;
+    background-color: $style-color;
+    position: relative;
+    bottom: -10px;
+    right: -340px;
+  }
+
+
+  .tag__description{
+    margin-bottom: 57px;
+  }
+}
+
+
+@media(min-width: 1200px){
+  .tag__tablet-width{
+    top: -277px;
+    right: 431px;
+  }
+
+  .tag__description{
+    position: absolute;
+    right: 0;
+    top: -305px;
+    width: 420px;
+  }
+  .afterElement::after{
+    right: 0;
+  }
+
+
+  .tag__list{
+    margin-bottom: 30px;
+  }
 }

@@ -50,13 +50,17 @@ body {
   width: 320px;
   margin: 0 auto;
   position: relative;
+  @media (min-width: 768px) {
+    width: 748px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
 
-  // @media (min-width: 768px) {
-  //   width: 748px;
-  // }
-
-  // @media (min-width: 1200px) {
-  //   width: 1200px;
-  // }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 

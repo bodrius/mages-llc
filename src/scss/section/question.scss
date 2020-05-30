@@ -41,3 +41,42 @@
     top: 10px;
     left: 10px;
 }
+
+
+@media(min-width: 768px){
+
+  .question__title{
+    padding-top: 35px;
+    font-size: 35px;
+  }
+
+  .question__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .question__item {
+    width: 280px;
+  }
+
+  .question__item:last-child{
+   width: 624px;
+
+  }
+  .question__item {
+    margin-right: 20px;
+  }
+}
+
+@media(min-width: 1200px){
+
+  .question__item {
+    width: 296px;
+  }
+  .question__item:last-child{
+    width: 296px;
+    margin-right: 0;
+  }
+}

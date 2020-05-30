@@ -43,3 +43,48 @@
     width: 150px;
     margin: 0 auto;
 }
+
+
+@media(min-width: 768px){
+.footer{
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer_box-socials{
+  margin: 0;
+  padding: 0;
+}
+
+.footer__title {
+  margin: 0;
+}
+}
+
+
+@media(min-width: 1200px){
+.footer__boxing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+}
+
+.footer__question{
+  margin: 0;
+  margin-right: 40px;
+}
+
+.footer__phone{
+  margin: 0;
+  margin-right: 40px;
+}
+
+.footer__btn-call{
+  margin: 0;
+}
+}
