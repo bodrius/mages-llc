@@ -1,12 +1,12 @@
 const choiseButton = document.querySelectorAll('.js_button');
-const closeBtn = document.querySelector('.create-order__close-btn');
-closeBtn.addEventListener('click', closeOrderModal);
+// const closeBtn = document.querySelector('.create-order__close-btn');
+// closeBtn.addEventListener('click', closeOrderModal);
 const arrayButton = Array.from(choiseButton);
 let orderForm = document.querySelector('#js_form');
 
-function closeOrderModal() {
-  orderForm.classList.add('togleModal');
-}
+// function closeOrderModal() {
+//   orderForm.classList.add('togleModal');
+// }
 
 function showOrderModal(arr) {
   arr.map(button =>
