@@ -46,21 +46,3 @@ function closeSuccesModalBackdrop(e) {
   }
 }
 
-//
-// проверка на то чно все поля формы заполнены
-//
-
-// function validateForm() {
-//   const radioBtn = document.querySelectorAll('.js_radioBtn');
-//   const array = Array.from(radioBtn);
-//   const checkRadio = array.some(element => element.checked === true);
-//   if (checkRadio) {
-//     orderForm.classList.add('togleModal');
-//     doneModal.classList.add('success-modal__open');
-//     choiseBtnCloseSucces.addEventListener('click', closeSuccesModal);
-//     choiseBackDrop.addEventListener('click', closeSuccesModalBackdrop);
-//     orderForm.style.disabled = 'false';
-//   } else {
-//     alert('заполните все поля формы');
-//   }
-// }

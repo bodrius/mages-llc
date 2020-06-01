@@ -1,9 +1,9 @@
 <?php
 if ($_POST) { 
 	$name = htmlspecialchars($_POST["name"]); // ïèøeì äaííûe â ïeðeìeííûe è ýêðaíèðóeì ñïeöñèìâoëû
-	$email = htmlspecialchars($_POST["tel"]);
+	$email = htmlspecialchars($_POST["phone"]);
 	$subject = htmlspecialchars($_POST["message"]);
-	$body = "Name: $name \n\nPhone: $tel \n\nSubject: $subject";
+	$body = "Name: $name \n\nPhone: $phone \n\nSubject: $subject";
 	$json = array(); 
 	function mime_header_encode($str, $data_charset, $send_charset) { // ôóíêöèÿ ïðeoáðaçoâaíèÿ çaãoëoâêoâ â âeðíóþ êoäèðoâêó 
 		if($data_charset != $send_charset);
