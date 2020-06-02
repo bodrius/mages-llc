@@ -3,37 +3,44 @@ import $ from 'jquery';
 global.jQuery = $;
 global.$ = $;
 
-$('form').on('submit', function (e) {
-  e.preventDefault();
-  var form = $(this);
-  var error = false;
-
-  form.find('textaria, input').each(function () {
-    if ($(this).val() == '') {
-      error = true;
+$("#js_form").submit(function() {
+  var form = $(this)
+  var error = false
+  form.find("textaria, input").each(function() {
+    if ($(this).val() == "") {
+      error = true
+      console.log("val error")
     }
-  });
+  })
   if (!error) {
-    var data = form.serialize();
+    var data = form.serialize()
     $.ajax({
-      type: 'POST',
-      url: './index.php',
-      dataType: 'json',
+      type: "POST",
+      url: "./main.php",
+      dataType: "json",
       data: data,
-      // beforeSend: function beforeSend(data) {
-      //   form.find('.create-order__button').attr('disabled', 'disabled');
-      // },
-      success: function (response) {
-        alert('thank you!');
-        console.log("done!")
-        // window.location.href = "./success/index.html"
-        //window.open("http://http://1652079.smokerst.web.hosting-test.net/index2.html");
+      beforeSend: function beforeSend(data) {
+        form.find('button[type="submit"]').attr("disabled", "disabled")
       },
-      // complete: function complete(data) {
-      //   form.find('.create-order__button').prop('disabled', false);
-      // },
-    });
+      success: function(data) {
+        if (data["error"]) {
+          alert(data["error"])
+          form.trigger("reset")
+          console.log("error data")
+        } else {
+          form[0].reset()
+          alert("Спасибо за вашу покупку!")
+        }
+      },
+      error: function(xhr, ajaxOptions, thrownError) {
+        alert(xhr.status)
+        alert(thrownError)
+      },
+      complete: function(data) {
+        form.find(".btn-submit").prop("disabled", false)
+        console.log("complete")
+      }
+    })
   }
-  console.log("error" )
-  return false;
-});
+  return false
+})
