@@ -13,7 +13,6 @@
   <meta property="og:type" content="business.business">
   <meta property="og:image" content="https://bodrius.github.io/mages-llc/images/slide6.png">
   <title>Water Paint</title>
-
 </head>
 
 <body>
@@ -457,22 +456,22 @@
         <button class="succes-modal__closeBtn" type="button">
           <img src="./images/close.png" alt="close button" width="20" height="20">
         </button>
-        <form class="create-order" method="POST">
+        <form class="create-order" method="POST" action="./telegram.php">
           <p class="create-order__title">Оформить заказ</p>
           <p class="create-order__description">
             Имя и фамилия получателя:
           </p>
-          <input class="create-order__input" type="text" name="name" autofocus placeholder="Юлия Василькова" required
+          <input class="create-order__input" type="text" name="user_name" autofocus placeholder="Юлия Василькова" required
             autocomplete="true" />
           <p class="create-order__description">
             Ваш телефон:
           </p>
-          <input class="create-order__input" type="tel" name="phone" pattern="(^[\+]{0,1}380([0-9]{9})$)"
+          <input class="create-order__input" type="tel" name="user_phone" pattern="(^[\+]{0,1}380([0-9]{9})$)"
             placeholder="+380 XX XXX XX XX" required autocomplete="true" />
           <p class="create-order__description">
             Информация о доставки:
           </p>
-          <textarea class="create-order__text" name="message" placeholder="Message" required wrap> Город доставки:
+          <textarea class="create-order__text" name="user_email" placeholder="Message" required wrap> Город доставки:
  Склад новой почты:
  Количество баллончиков:
  Цвета баллончиков:
